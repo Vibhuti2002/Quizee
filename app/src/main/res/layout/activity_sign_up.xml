@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.SignUpActivity"
+    android:background="@color/white">
+    <View
+        android:id="@+id/bgView"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:foregroundGravity="top"
+        android:background="@drawable/start_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:text="Welcome"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@id/etEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etEmail"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="250dp"
+        app:layout_constraintStart_toStartOf="@id/bgView"
+        app:layout_constraintEnd_toEndOf="@id/bgView"
+        app:layout_constraintTop_toTopOf="@id/bgView"
+        android:background="@drawable/edittext"
+        android:hint="Email"
+        android:textColorHint="#3C3C3C"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPass"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/bgView"
+        app:layout_constraintEnd_toEndOf="@id/bgView"
+        app:layout_constraintTop_toBottomOf="@id/etEmail"
+        android:background="@drawable/edittext"
+        android:hint="Password"
+        android:textColorHint="#3C3C3C"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"
+        />
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPass_2"
+        android:layout_width="0dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/bgView"
+        app:layout_constraintEnd_toEndOf="@id/bgView"
+        app:layout_constraintTop_toBottomOf="@id/etPass"
+        android:background="@drawable/edittext"
+        android:hint="Confirm Password"
+        android:textColorHint="#3C3C3C"
+        android:textSize="20sp"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bSignUp"
+        android:layout_width="291dp"
+        android:layout_height="46dp"
+        android:background="@drawable/start_button"
+        android:fontFamily="@font/poppins"
+        android:text="Sign Up"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/etPass_2"
+        app:layout_constraintStart_toStartOf="@id/bgView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bgView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+        <TextView
+            android:id="@+id/tvCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:text="Already have an account?"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins"
+            android:textSize="16sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout"
+            app:layout_constraintStart_toEndOf="@+id/tvCreate"
+            android:text=" Login"
+            android:fontFamily="@font/poppins"
+            android:textColor="#A50BD4"
+            android:textSize="16sp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
