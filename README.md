@@ -31,7 +31,6 @@
 - Quizee uses Retrofit to make all REST API calls.
 - Quizee is made using Kotlin and following Modern Android Development practices.
 - Quizee uses Kotlin Coroutines and LiveData to handle all asynchronous tasks.
-- Quizee uses all Jetpack libraries and follows MVVM architecture. It also has a G.O.A.T rating in Android's  M.A.D scorecard.
 
 
 
